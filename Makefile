@@ -2,7 +2,7 @@ FTP_DIR=cv
 
 all: chinesecv englishcv
 
-chinesecv: WeizhouPan_zh.pdf
+chinesecv: WeizhouPan_cn.pdf
 englishcv: WeizhouPan_en.pdf
 
 %.pdf: %.tex WeizhouPan.sty
