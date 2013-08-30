@@ -12,7 +12,7 @@ englishcv: WeizhouPan_en.pdf
 	xelatex -interaction=batchmode $<
 
 %.html: %.pdf
-	pdf2htmlEX --zoom=2 $<
+	pdf2htmlEX --zoom=1.5 $<
 
 clean:
 	rm -f *.aux *.log *.out
