@@ -1,0 +1,151 @@
+\ProvidesPackage{WeizhouPan}
+%\RequirePackage[pdftex]{hyperref}
+\RequirePackage{metalogo}
+
+% Chinese
+\RequirePackage[CJKnumber,BoldFont]{xeCJK}
+\RequirePackage{indentfirst}
+\RequirePackage[numbers,sort&compress,square]{natbib}
+\defaultfontfeatures{Mapping=tex-text}
+\xeCJKsetcharclass{"0}{"2E7F}{0}
+\xeCJKsetcharclass{"2E80}{"FFFF}{1}
+
+\setCJKfamilyfont{song}{Adobe Song Std}
+\setCJKfamilyfont{hei}{YaHei Consolas Hybrid}
+\setCJKfamilyfont{pan}{YaHei Consolas Hybrid}
+\setCJKfamilyfont{weizhou}{YaHei Consolas Hybrid}
+\setCJKfamilyfont{fs}{Adobe Fangsong Std}
+\setCJKfamilyfont{kai}{Adobe Kaiti Std}
+\setCJKfamilyfont{li}{LiSu}
+\setCJKfamilyfont{you}{YouYuan}
+\setCJKfamilyfont{githubfont}{Octicons}
+
+\newcommand{\song}{\CJKfamily{song}}
+\newcommand{\fs}{\CJKfamily{fs}}
+\newcommand{\kai}{\CJKfamily{kai}}
+\newcommand{\hei}{\CJKfamily{hei}}
+\newcommand{\pan}{\CJKfamily{pan}}
+\newcommand{\weizhou}{\CJKfamily{weizhou}}
+\newcommand{\li}{\CJKfamily{li}}
+\newcommand{\you}{\CJKfamily{you}}
+\newcommand{\githubfont}{\CJKfamily{githubfont}}
+\def\songti{\song}
+\def\fangsong{\fs}
+\def\kaishu{\kai}
+\def\heiti{\hei}
+\def\lishu{\li}
+\def\youyuan{\you}
+%\def\githubfont{\github}
+
+
+
+% moderncv themes
+\moderncvtheme[orange]{classic} % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{casual}   % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+\usepackage{ifxetex,ifluatex}
+\newif\ifxetexorluatex
+\ifxetex
+  \xetexorluatextrue
+\else
+  \ifluatex
+    \xetexorluatextrue
+  \else
+    \xetexorluatexfalse
+  \fi
+\fi
+
+\ifxetexorluatex
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+%\newfontfamily{\githubfont}{Octicons}
+\newfontfamily{\linkedinfont}{Myriad Pro}
+\else
+%\newcommand\githubfont{}
+\newcommand\linkedinfont{}
+\fi
+
+\usepackage{microtype}
+
+\newcommand\octocat{{\githubfont\char"F209}}
+\newcommand\linkedin{%
+\scalebox{0.7}{%
+\begin{tikzpicture}[baseline]%
+\node[fill=color2,rounded corners=2pt,anchor=base] {%
+\linkedinfont\bfseries\upshape\color{white}{in}%
+};%
+\end{tikzpicture}}}
+
+% personal data
+\familyname{伟洲}
+\firstname{潘}
+\address{RM 504~(510631)}{School of Computer,~SCNU}
+\mobile{+86 185 XXXX XXXX}
+%\phone{+33 (0) 456 753 683}
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{cs.wzpan@gmail.com}
+\homepage{www.hahack.com}
+\extrainfo{\octocat~\url{http://github.com/wzpan}\\
+  \linkedin~\httplink{www.linkedin.com/in/hahack}%
+}
+\photo[48pt]{me}
+
+
+\AtBeginDocument{\renewcommand{\labelitemi}{-- }}
+
+\usepackage[firstyear=2004,lastyear=2013]{moderntimeline}
+%\tlmaxdates{2004}{2012}
+\tlwidth{0.8ex}
+
+
+% Proper alignment
+\usepackage[originalcommands]{ragged2e}
+\renewcommand*{\cvcomputer}[4]{%
+  \cvdoubleitem{#1}{\small\raggedright#2}{#3}{\small\raggedright#4}}
+
+% Not all fonts have an sl shape
+\renewcommand*{\cventry}[6]{%
+  \cvline{#1}{%
+    {\bfseries#2}%
+    \ifx#3\else{, {\itshape#3}}\fi%
+    \ifx#4\else{, #4}\fi%
+    \ifx#5\else{, #5}\fi%
+    .%
+    \ifx#6\else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi
+    }}%
+
+
+% Refine quote 
+\newcommand*{\myquote}[2]{%
+   \quote{\itshape #1 \\ \scshape \footnotesize #2}}
+
+% Hobbies
+\newcommand*{\cvhobby}[2]{\cvline{#1}{\small #2}}
+
+
+% Developer/Contributor footnotes
+\usepackage[bottom,norule,symbol*]{footmisc}
+\newcommand*{\devnotes}[2]{%
+\vfill
+\footnotetext[1]{#1}
+\footnotetext[2]{#2}
+}
+
+\newcommand*{\developer}{\footnotemark[1]}
+\newcommand*{\contributor}{\footnotemark[2]}
+
+% for some reason, lines take up a lot of space in itemize in English...
+\newenvironment{tightitemize}
+   {\begin{itemize}
+   \setlength{\parskip}{0pt}}
+   {\end{itemize}}
+
+
+
+
