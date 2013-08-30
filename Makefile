@@ -10,6 +10,7 @@ englishcv: WeizhouPan_en.pdf
 	#lualatex -interaction=batchmode $<
 	xelatex -interaction=batchmode $<
 	xelatex -interaction=batchmode $<
+	cp * ../cv-html/
 
 %.html: %.pdf
 	pdf2htmlEX --zoom=1.5 $<
