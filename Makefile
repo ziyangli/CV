@@ -15,6 +15,6 @@ englishcv: WeizhouPan_en.pdf
 	pdf2htmlEX --zoom=1.5 $<
 
 clean:
-	rm -f *.aux *.log *.out
+	-rm -f *.aux *.log *.out
 	-rm -r auto
 
