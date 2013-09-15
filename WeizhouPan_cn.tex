@@ -11,7 +11,6 @@
 \documentclass[11pt,a4paper,nolmodern]{moderncv}
 
 \usepackage{WeizhouPan}
-
 \moderncvtheme[blue]{classic}
 
 \usepackage[english]{babel}
@@ -40,13 +39,13 @@
 \hyphenpenalty=10000
 \maketitle
 
-\section{技能}
+\section{\hei 技能}
 
-\subsection{系统}
+\subsection{\hei 系统}
 \cvline{操作系统}{GNU/Linux(ArchLinux, Ubuntu, RedHat, Linux Deepin, Fedora), Windows}
 \cvline{桌面环境}{Awesome, xfce, KDE, Gnome2, Gnome2, Gnome3, Unity, Cinnamon, Mate}
 
-\subsection{开发}
+\subsection{\hei 开发}
 \cvcomputer{语言}{Python, Shell/Bash, C, Java, Pascal, Matlab}
 	   {格式}{Markdown, Org-mode, Textile, reStructuredText, XML, YAML/JSon}
 
@@ -60,7 +59,7 @@
            {版本控制}{Git, SVN, GitHub, Google Code}
 
 
-\subsection{工具}
+\subsection{\hei 工具}
 \cvcomputer{办公}{Microsoft Office, WPS, OpenOffice/LibreOffice}
            {图形}{TikZ, Graphviz, Ditta, Gimp, Inkscape, Photoshop, Fireworks, CorelDraw, Visio, yEd, Calligra Flow}
 
@@ -71,8 +70,8 @@
 
 %\devnotes{Developer}{Contributor}
 
-\section{履历}
-\subsection{科研实践}
+\section{\hei 履历}
+\subsection{\hei 科研实践}
 
 % Center labels and use "Since"
 %\tltextstart[base]{\scriptsize}
@@ -87,74 +86,85 @@
    \href{http://www.math.tau.ac.il/~dcor/}{Daniel Cohen-Or教授},
    \href{http://graphics.uni-konstanz.de/mitarbeiter/deussen.php}{Oliver
      Deaussen教授}, \href{http://www.idav.ucdavis.edu/~asharf/}{Andrei Sharf博士}等有着
-   高效合作；
- \item 为\href{http://web.siat.ac.cn/~yangyan/}{李扬彦}博士的科研成果制作展示
-   视频；
- \item 与\href{http://web.siat.ac.cn/~kexie}{谢科博士}以及
-   \href{http://www.idav.ucdavis.edu/~asharf/}{Andrei Sharf博士}合作论文；
- \item 为可视计算中心搭建一个
-   \href{http://vcc.siat.ac.cn/w/index.php/Main_Page}{Wiki}系统；
- \item 连续获得两个季度的客座学生奖学金。
+   高效合作;
+ \item 研究材质演变、形状检索、运动数据聚类等图形学领域课题;
+ \item 为\href{http://web.siat.ac.cn/~yangyan/}{李扬彦}博士的科研成果制作\href{http://hahack.com/life/video-released}{展示视频};
+  \item 连续获得两个季度的客座学生奖学金.
  \end{tightitemize}}
 
-\tlcventry{2011}{2012}{手势识别及红外感应在虚拟手术场景人机交互的研究和应用}{课
-  题成员}{}{}%
+\tlcventry{2011}{2012}{手势识别及红外感应在虚拟手术场景人机交互的研究和应用}{核心成员}{}{}%
   {
 \begin{itemize}
- \item 合作完成并发表两篇论文；
- \item 负责基于任天堂 Wii Remote 的红外感应技术，虚拟手术刀的建模；
- \item 成果获得2012年华南师范大学软件设计大赛一等奖，2011年第十二届“挑战杯”全
-   国大学生课外学术科技作品竞赛银奖等奖项。
+ \item \textbf{课题性质}：广东省产学研结合项目《数字医学在腹部外科仿真手术的研究和开发》 子课题.
+ \item 研究内容：采用立体视觉和红外捕捉技术实现了一支仿真手术刀,并结合基于BP神经网络的手势识别指令,构建出结合虚拟手术操作和场景漫游功能的沉浸式手术环境;
+ \item \textbf{个人职责}：研究基于任天堂 Wii Remote 的红外感应技术；基于 OpenGL 的虚拟手
+   术刀的建模；基于 BP 人工神经网络的手势识别；论文撰
+   写;
+ \item \textbf{项目成果}：发表两篇核心期刊论文；获得2012年华南师范大学软件设计大赛一等奖，2011年第十二届“挑战杯”全国大学生课外学术科技作品竞赛银奖等奖项.
 \end{itemize}}
 
 \tlcventry{2010}{2011}{\href{http://www.siat.ac.cn/}{中国科学院深圳先
     进技术研究院}}{客座学生}{}{}
 {
 \begin{tightitemize}%
- \item 开发基于QT和JavaScript二维百度地图控件；
- \item 开发基于TEA加密算法离线地图加密包；
- \item 百维达公司HR助理；
- \item 文献调研。
+ \item 开发二维百度地图控件;
+ \item 开发离线地图数据加密模块;
+ \item 百维达公司（中国科学院产学研孵化企业）HR助理;
+ \item 文献调研.
  \end{tightitemize}}
 
 \tlcventry{2009}{2010}{基于 MLTS 技术的仿生歌唱系统}{负责人}{}{}%
   {
 \begin{itemize}
- \item 发表一篇核心期刊论文；
- \item 成果获得华南师范大学软件设计大赛二等奖。
+\item \textbf{课题性质}：国家级大学生创新性实验计划项目.
+\item \textbf{研究内容}： 提出了一种实现计算机学习并演唱歌曲的系统。系统运用敲击定位法定
+  位发音时刻,然后利用 Daubechies 小波变换和快速傅里叶变换计算出对应的基频,采用语音合成技术输出声音.
+\item \textbf{个人职责}：系统主要开发者，论文撰写人.
+ \item \textbf{项目成果}：发表一篇核心期刊论文；获得华南师范大学软件设计大赛二等奖.
 \end{itemize}}
 
-\subsection{社会实践}
+\subsection{\hei 社会实践}
 
 \tlcventry{2011}{0}{\href{http://www.gzlug.org}{广州Linux用户组(GZLUG)}}{成员}{}{}{
 \begin{tightitemize}%
- \item \href{http://www.gzlug.org/?p=641}{2012 广州地区软件自由日庆祝活动}组织者；
- \item \href{https://github.com/gzlug}{GZLUG Github组织}内容提交者；
- \item GZLUG 邮件列表活跃用户。
+ \item \href{http://www.gzlug.org/?p=641}{2012 广州地区软件自由日庆祝活动}组织者;
+ \item GZLUG 邮件列表活跃用户.
 \end{tightitemize}}
 
 \tlcventry{2008}{2009}{华南师范大学校学生会网络部}{部长}{}{}
 {
   \begin{tightitemize}%
-    \item 校学生会第32届第3任网络部部长；
-    \item 年底被推选为校学生会系统“优秀学生干部”。
+    \item 校学生会第32届第3任网络部部长;
+    \item 参与组织“女生节”、“宿舍文化节”、当代大学生论坛、课件制作大赛”、师
+      范技能大赛等多个校级活动;
+    \item 年底被推选为校学生会系统“优秀学生干部”.
  \end{tightitemize}}
 
 \tlcventry{2007}{2008}{华南师范大学计算机学院07级5班}{班长}{}{}
 {
   \begin{tightitemize}%
-    \item 亲自策划并带头组织“班级文化节”；
-    \item 年底被推选为校学生会系统“优秀学生干部”。
+    \item 亲自策划并带头组织“班级文化节”;
+    \item 年底被推选为校学生会系统“优秀学生干部”.
     \end{tightitemize}}
 
-\tlcventry{2004}{2006}{陆丰市秋水报}{电脑编辑}{}{}
+\subsection{\hei 论文和专利}
 {
-  \begin{tightitemize}%
-    \item 负责电脑编辑工作,为《秋水》排版了4期报纸；
-    \item 年底被评为秋水第三届“优秀编委”。
-    \end{tightitemize}}
+  \tldatelabelcventry{2013}{April 2013}{基于人工神经网络的百度地图坐标解密方法
+  }{计算机工程与应用}{第一作者}{已发表}{}
+  \setlength{\parskip}{-20pt}
+  \tldatelabelcventry{2013}{April 2013}{沉浸式手术环境的研究与实现}{计算机仿
+    真}{第二作者}{已录用}{}  
+  \tldatelabelcventry{2013}{February 2013}{红外光虚拟手术刀的研究与实现}{计算机
+    系统应用}{第一作者}{已录用}{}
+  \tldatelabelcventry{2012}{April 2012}{一种基于小波和快速傅里叶变换的学习型歌唱系统
+}{计算机工程与应用}{第一作者}{已发表}{}
+  \tldatelabelcventry{2013}{Augest 2013}{一种同步播放多媒体文件的方法及系统}{发
+    明}{第一申请人}{申请中}{}
+  \tldatelabelcventry{2012}{December 2012}{基于Clifford代数在十二方向上三维分割
+    腹部血管的应用实例}{发明}{合作申请人}{申请中}{}  
+}
 
-\subsection{奖项}
+\subsection{\hei 奖项}
 
 % Restore normal labels
 %\tltext{\scriptsize}
@@ -174,38 +184,25 @@
 \tldatelabelcventry{2011}{May 2011}{第十一届“挑战杯”广东大学生课外学术科技作品
   竞赛特等奖}{省级}{}{}{}
 
-\tldatelabelcventry{2011}{April 2011}{华南师范大学一等奖学金}{校级}{}{}{}
+\tldatelabelcventry{2011}{April 2011}{华南师范大学一等奖学金 $\times$ 2}{校级}{}{}{}
 
-\tldatelabelcventry{2010}{July 2010}{华南师范大学二等奖学金}{校级}{}{}{}
-
-\tldatelabelcventry{2009}{October 2009}{华南师范大学一等奖学金}{校级}{}{}{}
-
-\tldatelabelcventry{2008}{October 2008}{华南师范大学二等奖学金}{校级}{}{}{}
+\tldatelabelcventry{2010}{July 2010}{华南师范大学二等奖学金 $\times$ 2}{校级}{}{}{}
 
 }
 
-\section{教育背景}
-
-\tlcventry{2012}{2013}{\href{http://www.siat.ac.cn/}{中国科学院深圳先进
-    技术研究院}~\href{http://vcc.siat.ac.cn/}{可视计算中心}}{客座学生}{}{}{中国科学院深圳先
-  进技术研究院可视计算中心客座学生}
+\section{\hei 教育背景}
 
 \tlcventry{2011}{0}{\href{http://www.scnu.edu.cn}{华南师范大
     学}~\href{http://portal.scnu.edu.cn/wps/portal/cs}{计算机学院}}{研究生}{}{}{华南师范大
   学计算机学院2011届计算机应用技术硕士研究生}
-
-\tlcventry{2010}{2011}{\href{http://www.siat.ac.cn/}{中国科学院深圳先进
-    技术研究院}~\href{http://vcc.siat.ac.cn/}{可视计算中心}}{客座学生}{}{}{中国科学院深圳先
-  进技术研究院可视计算中心客座学生}
 
 \tlcventry{2007}{2011}{\href{http://www.scnu.edu.cn}{华南师范大
     学}~\href{http://portal.scnu.edu.cn/wps/portal/cs}{计算机学院}}{本科生}{}{}{华南师范
   大学计算机学院2007届网络工程系学生}
 
 
-\section{英语水平}
+\section{\hei 英语水平}
 \cvlanguage{英语6级}{513}{听力: 156; 阅读: 199; 综合技能: 64;写作: 94}
-
 
 
 \end{document}
