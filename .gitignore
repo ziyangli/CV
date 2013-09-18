@@ -1,0 +1,7 @@
+*.aux
+*.log
+*.out
+*.aux
+*.log
+*.el
+auto/
