@@ -1,7 +1,7 @@
 What is this
 ------------
 
-This is a repository that contains [my up-to-date CV](http://wzpan.github.io/CV).
+This is a repository that contains [my up-to-date CV](http://wzpan.github.io/CV) .
 
 Building
 --------
@@ -10,9 +10,9 @@ The CV is optimized to be built into a PDF using pdflatex.
 
 In order to achieve this, you need:
 
-   * A LaTeX distribution (TeXLive 2011 recommended);
-   * LuaTeX;
-   * MinionPro and MyriadPro fonts (you can find them with Acrobat Reader).
+   * A LaTeX distribution (TeXLive recommended);
+   * XeTeX;
+   * MinionPro and MyriadPro fonts (you can find them at *fonts* folder).
 
 To build the PDF CVs, type `make`.
 

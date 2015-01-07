@@ -16,7 +16,8 @@
 \linespread{0.8}
 
 % personal data
-\title{Weizhou Pan, Master Candidate}
+\title{Weizhou Pan, SDET}
+\address{\href{www.baidu.com}{Baidu$^{\texttrademark}$}}{}
 \extrainfo{\octocat~\url{http://github.com/wzpan}\\
   \linkedin~\httplink{www.linkedin.com/in/hahack}%
 }
@@ -35,61 +36,67 @@
 
 \section{Skills}
 
-\cvcomputer{Languages}{C/C++, Python, Shell/Bash, Matlab}
-           {Operating Systems}{Linux, Windows}
+\cvcomputer{Languages}{C/C++, Python, Shell/Bash}
+           {Operating Systems}{Linux, Windows, Mac}
 \cvcomputer{English Proficiency}{CET6(513)}
-           {Development Tools}{Emacs, Subl, Git, Makefile, gdb}
+           {Development Tools}{Emacs, Git, Makefile, gdb, Valgrind}
+\cvcomputer{Documentation}{\LaTeX{}, Doxygen, Markdown}
+           {Unit Test}{minunit, nose, doctest}
 
 \section{Experience}
 
-\tlcventry{2012}{2013}{\href{http://www.siat.ac.cn/}{Shenzhen
+\subsection{Career Experience}
+
+\tlcventry{2014}{0}{\href{http://www.baidu.com/}{Baidu$^{\texttrademark}$}}{Software Development Engineer in Test}{}{}
+{
+\begin{tightitemize}%
+ \item Main developer for \href{http://godeyes.duapp.com}{GodEyes-iOS}, a static
+   language crash analyzer for iOS APP. (Users includes \href{http://www.baidu.com}{Baidu},
+   \href{http://www.taobao.com}{Alibaba}, \href{http://www.qq.com}{Tencent}, \href{http://jd.com}{Jingdong}, \textsl{etc.})
+ \item Attend testing for Baidu Navi project. Wrote foundation tools for
+   map testing \textsl{e.g.} map format checker, svn
+   watcher, flow analyzer, \textsl{etc.}, which motivated
+   the map testing automation rate to 100\%.
+ \end{tightitemize}}
+
+\subsection{Scientific Experience}
+
+\tlcventry{2013}{2012}{\href{http://www.siat.ac.cn/}{Shenzhen
     Institute of Advanced Technology}}{Intern Student}{}{}
 {Doing scientific research.
 \begin{tightitemize}%
- \item Collaborated scientific researchs with \href{http://web.siat.ac.cn/~baoquan/}{Baoquan
-     Chen}, \href{http://www.math.tau.ac.il/~dcor/}{Daniel Cohen-Or},
-   \href{http://graphics.uni-konstanz.de/mitarbeiter/deussen.php}{Oliver
-     Deaussen}, \textsl{etc}.
  \item Studied texture weathering, motion clustering, shape retrieval, etc.
- \item Developed a 2D Baidu Map Control and an offline data encryptor;
- \item Gained intern student scholarships.
+ \item Published 5 papers. Applied 1 Patent.
+ \item Gained intern student scholarships. 
  \end{tightitemize}}
 
-\tlcventry{2011}{2012}{Researches and Applications of Handwriting Recognition and Infrared Sensing in Virtual Surgery}{Core Member}{}{}%
+\subsection{Open-source Experience}
+
+\tlcventry{2014}{2013}{\href{http://github.com/wzpan/qtevm}{QtEVM}}{Author}{}{}%
   {
 \begin{itemize}
- \item \textbf{Research contents}: We impletemented a virtual scalpel by using
-   infrared sensing techniques, and built an immersive surgery environment 
-   with scene roaming and the surgery operation using gesture recognition technique based on the BP neural network.
- \item \textbf{Personal duty}: studied on hacking Nintendo's Wii Remote; hand writing recognition based on BP network;
- \item \textbf{Results}: 2 papers; silver prize at the Challenge Cup of National College Students' Academic Works.
+\item \textbf{Abstract}: Open source implementation for \href{http://people.csail.mit.edu/mrub/vidmag/}{EVM(Eulerian Video Magnification)}.
+\item \textbf{Features}: The first open-source completed C++ implementation for EVM, which supports both motion and color magnification.
+\item \textbf{Stats}: 10 stars, 2 forks.
 \end{itemize}}
 
-\tlcventry{2009}{2010}{A Bionic Sining System Based on MLTS technology}{Leader}{}{}%
+\tlcventry{2013}{2012}{\href{http://github.com/wzpan/scnuthesis}{SCNUThesis}}{Author}{}{}%
   {
 \begin{itemize}
- \item \textbf{Research Contents}: We proposed an intelligent singing system. The
-   system uses firstly locates every moment when each word
-   of lyric occurs, and then calculate the fundamental frequency based on wavelets
-   transform and Fast Fourier transform. Finally the computer sings the song with text to speech technology;
- \item \textbf{Personal Duty}: core developer, paper writer;
- \item \textbf{Results}: 1 paper.
+\item \textbf{Abstract}: Dissertation LaTeX Template for Sourth China Normal
+  University.
+\item \textbf{Features}: Supports both master and doctor dissertations, with lots of options for easily customizing.
+\item \textbf{Stats}: 16 stars, 6 forks, 2,000+ downloads. Helped lots of
+  student finish their dissertations.
 \end{itemize}}
 
-\section{Publications}
-{
-  \tldatelabelcventry{2013}{April 2014}{A decryption method of baidu map's
-    coordinates based on artificial neural network}{Computer Engineering and
-    Applications}{1st Author}{Published}{}
-  \setlength{\parskip}{-5pt}
-  \tldatelabelcventry{2013}{April 2013}{The research and implementation of Immersive surgery environment}{The Magazine Agency of Computer Simulation}{2nd Author}{Accepted}{}
-  \tldatelabelcventry{2013}{February 2013}{The research and implementation of
-    virtual infrared scalpel}{Computer Systems \& Applications}{1st
-    Author}{Accepted}{}
-  \tldatelabelcventry{2012}{April 2012}{Intelligent singing system based on
-    wavelets transform and fast Fourier trans
-    form}{Computer Engineering and Applications}{1st Author}{Published}{}
-}
+\tlcventry{2014}{2013}{\href{http://github.com/wzpan/hexo-theme-freemind}{hexo-theme-freemind}}{Author}{}{}%
+  {
+\begin{itemize}
+\item \textbf{Abstract}: One of the most popular theme for \href{hexo.io}{Hexo}.
+\item \textbf{Features}: Luxuriant tag plugins so as to get the power of Twitter Bootstrap with minimal hassle.
+\item \textbf{Stats}: 50 stars, 28 forks.
+\end{itemize}}
 
 \section{Awards}
 
@@ -97,18 +104,22 @@
 %\tltext{\scriptsize}
 
 {
-\tldatelabelcventry{2012}{June 2012}{First Prize Innovation Scholarship}{South
+
+\tldatelabelcventry{2013}{2013.10}{National Scholarship}{South
   China Normal University}{}{}{}
 
 \setlength{\parskip}{-20pt}
 
-\tldatelabelcventry{2011}{October 2011}{Silver Prize}{the 12th Challenge Cup of
+\tldatelabelcventry{2011}{2011.10}{Silver Prize}{the 12th Challenge Cup of
   National College Students' Academic Works}{}{}{}
 
-\tldatelabelcventry{2011}{April 2011}{First Grade Scholarship $\times$ 2}{South China
-  Normal University}{}{}{}
+\tldatelabelcventry{2011}{2011.6}{Outstanding Graduate \& Dissertation}{South
+  China Normal University}{}{}{}
 
-\tldatelabelcventry{2010}{July 2010}{Second Grade Scholarship $\times$ 2}{South China
+\setlength{\parskip}{-10pt}
+
+\tlcventry{2012}{2008}{1st Grade Scholarship($\times$ 2), 2nd
+  Grade Scholarship($\times$ 2), Innovation Scholarship}{South China
   Normal University}{}{}{}
 
 }
